@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_delete"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="Izbriši jelo"
+        android:textColor="@color/crvena"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="Kliknite na jelo koje želite obrisati"
+        android:textColor="@color/tekst_sivi"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvPraznoBrisanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="Nema jela za brisanje."
+        android:textAlignment="center"
+        android:textColor="@color/tekst_sivi"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvJelaZaBrisanje"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/pozadina"
+        android:dividerHeight="8dp" />
+
+</LinearLayout>

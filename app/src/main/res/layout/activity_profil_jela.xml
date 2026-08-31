@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivSlikaJela"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:contentDescription="Slika jela"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvNazivJela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Naziv jela"
+                    android:textColor="@color/tekst_tamni"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvKalorijeJela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="0 kcal"
+                    android:textColor="@color/zelena"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnUredi"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/plava"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Uredi jelo"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnIzbrisi"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/crvena"
+            android:drawableStart="@drawable/ic_delete"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Izbriši jelo"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

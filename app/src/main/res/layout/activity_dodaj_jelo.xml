@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvNaslov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/ic_add_food"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Dodaj novo jelo"
+            android:textColor="@color/zelena"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Naziv jela"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etNazivJela"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:hint="npr. Pileća salata"
+            android:inputType="text"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Kalorijska vrijednost (kcal)"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etKalorije"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:hint="npr. 450"
+            android:inputType="number"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Slika jela"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:id="@+id/ivPregledSlike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Pregled odabrane slike"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Spinner
+                android:id="@+id/spSlika"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSpremi"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/zelena"
+            android:drawableStart="@drawable/ic_save"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Spremi jelo"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

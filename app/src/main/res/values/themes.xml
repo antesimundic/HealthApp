@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Osnovna tema aplikacije (samo svijetla, bez tamnog nacina). -->
+    <style name="Theme.HealthApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/zelena</item>
+        <item name="colorPrimaryDark">@color/zelena_tamna</item>
+        <item name="colorAccent">@color/zelena</item>
+        <item name="android:windowBackground">@color/pozadina</item>
+        <item name="android:textColorPrimary">@color/tekst_tamni</item>
+    </style>
+
+</resources>

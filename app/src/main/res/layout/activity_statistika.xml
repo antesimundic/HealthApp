@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_stats"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Statistika potrošnje"
+            android:textColor="@color/narancasta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:text="Pregled unesenih kalorija"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="13sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/zelena_svijetla"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tvDnevnaStatistika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Dnevna statistika..."
+                android:textColor="@color/zelena_tamna"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/plava_svijetla"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tvTjednaStatistika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Tjedna statistika..."
+                android:textColor="@color/plava"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/narancasta_svijetla"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tvMjesecnaStatistika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Mjesečna statistika..."
+                android:textColor="@color/narancasta"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- statistika za proizvoljno razdoblje -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Vlastito razdoblje"
+            android:textColor="@color/tekst_tamni"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOdDatum"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/tirkizna"
+                android:text="Od: -"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnDoDatum"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/tirkizna"
+                android:text="Do: -"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/tirkizna_svijetla"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tvRazdobljeStatistika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Statistika razdoblja..."
+                android:textColor="@color/tirkizna"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnOsvjezi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/narancasta"
+            android:text="Osvježi statistiku"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>

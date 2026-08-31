@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_add_calories"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Zabilježi obrok"
+            android:textColor="@color/ljubicasta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:text="Odaberite jelo te datum i vrijeme konzumacije"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="13sp" />
+
+        <!-- datum i vrijeme -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Datum"
+                    android:textColor="@color/tekst_sivi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvOdabraniDatum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_chip"
+                    android:backgroundTint="@color/ljubicasta_svijetla"
+                    android:padding="12dp"
+                    android:text="-"
+                    android:textColor="@color/ljubicasta"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnOdaberiDatum"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@drawable/bg_button"
+                    android:backgroundTint="@color/ljubicasta"
+                    android:text="Promijeni"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Vrijeme"
+                    android:textColor="@color/tekst_sivi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvOdabranoVrijeme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_chip"
+                    android:backgroundTint="@color/ljubicasta_svijetla"
+                    android:padding="12dp"
+                    android:text="-"
+                    android:textColor="@color/ljubicasta"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnOdaberiVrijeme"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@drawable/bg_button"
+                    android:backgroundTint="@color/ljubicasta"
+                    android:text="Promijeni"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Jelo"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spJelo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Količina (broj porcija)"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etKolicina"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_input"
+            android:hint="1"
+            android:inputType="number"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnDodajKalorije"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/zelena"
+            android:drawableStart="@drawable/ic_save"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Spremi u dnevnik"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/obrub" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Dnevni limit kalorija za odabrani datum"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etDnevniLimit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input"
+            android:hint="2000"
+            android:inputType="number"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnPostaviLimit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/narancasta"
+            android:text="Postavi dnevni limit"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/ljubicasta_svijetla"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tvTrenutneKalorije"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Trenutne kalorije..."
+                android:textColor="@color/ljubicasta"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthApp">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DodajJeloActivity"
+            android:label="@string/naslov_dodaj_jelo" />
+
+        <activity
+            android:name=".PopisJelaActivity"
+            android:label="@string/naslov_popis_jela"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ProfilJelaActivity"
+            android:label="@string/naslov_profil_jela"
+            android:parentActivityName=".PopisJelaActivity" />
+
+        <activity
+            android:name=".DodajKalorijeActivity"
+            android:label="@string/naslov_dodaj_kalorije"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".DnevnikActivity"
+            android:label="@string/naslov_dnevnik"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".UrediUnosActivity"
+            android:label="@string/naslov_uredi_unos"
+            android:parentActivityName=".DnevnikActivity" />
+
+        <activity
+            android:name=".StatistikaActivity"
+            android:label="@string/naslov_statistika"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".IzbrisiJeloActivity"
+            android:label="@string/naslov_izbrisi_jelo"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

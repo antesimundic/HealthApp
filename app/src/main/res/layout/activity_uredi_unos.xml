@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/plava"
+            android:gravity="center_vertical"
+            android:text="Uredi unos"
+            android:textColor="@color/plava"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Jelo"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spJeloUredi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Datum"
+                    android:textColor="@color/tekst_sivi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvDatumUredi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_chip"
+                    android:backgroundTint="@color/plava_svijetla"
+                    android:padding="12dp"
+                    android:text="-"
+                    android:textColor="@color/plava"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnDatumUredi"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@drawable/bg_button"
+                    android:backgroundTint="@color/plava"
+                    android:text="Promijeni"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Vrijeme"
+                    android:textColor="@color/tekst_sivi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvVrijemeUredi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_chip"
+                    android:backgroundTint="@color/plava_svijetla"
+                    android:padding="12dp"
+                    android:text="-"
+                    android:textColor="@color/plava"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnVrijemeUredi"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@drawable/bg_button"
+                    android:backgroundTint="@color/plava"
+                    android:text="Promijeni"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Količina (broj porcija)"
+            android:textColor="@color/tekst_sivi"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etKolicinaUredi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_input"
+            android:hint="1"
+            android:inputType="number"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnSpremiUnos"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/zelena"
+            android:drawableStart="@drawable/ic_save"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Spremi promjene"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnIzbrisiUnos"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="@color/crvena"
+            android:drawableStart="@drawable/ic_delete"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Izbriši unos"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- glavne boje aplikacije -->
+    <color name="zelena_tamna">#1B5E20</color>
+    <color name="zelena">#2E7D32</color>
+    <color name="zelena_svijetla">#E8F5E9</color>
+
+    <color name="plava">#1565C0</color>
+    <color name="plava_svijetla">#E3F2FD</color>
+
+    <color name="narancasta">#EF6C00</color>
+    <color name="narancasta_svijetla">#FFF3E0</color>
+
+    <color name="ljubicasta">#6A1B9A</color>
+    <color name="ljubicasta_svijetla">#F3E5F5</color>
+
+    <color name="crvena">#C62828</color>
+    <color name="crvena_svijetla">#FFEBEE</color>
+
+    <color name="tirkizna">#00695C</color>
+    <color name="tirkizna_svijetla">#E0F2F1</color>
+
+    <!-- pozadina i tekst -->
+    <color name="pozadina">#F4F6F4</color>
+    <color name="tekst_tamni">#212121</color>
+    <color name="tekst_sivi">#757575</color>
+    <color name="obrub">#DDDDDD</color>
+</resources>

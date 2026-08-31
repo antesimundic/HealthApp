@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+
+    <!-- naslovi zaslona -->
+    <string name="naslov_dodaj_jelo">Dodaj jelo</string>
+    <string name="naslov_popis_jela">Popis jela</string>
+    <string name="naslov_profil_jela">Profil jela</string>
+    <string name="naslov_dodaj_kalorije">Zabilježi obrok</string>
+    <string name="naslov_dnevnik">Dnevnik obroka</string>
+    <string name="naslov_uredi_unos">Uredi unos</string>
+    <string name="naslov_statistika">Statistika</string>
+    <string name="naslov_izbrisi_jelo">Izbriši jelo</string>
+</resources>
